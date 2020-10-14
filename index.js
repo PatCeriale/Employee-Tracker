@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 const inquirer = require("inquirer");
-// const addEmp = require("./js/addEmployee");
+// const addEmployee = require("./js/addEmployee");
 // const viewEmployees = require("./js/viewEmployees");
 // const updateEmployee = require("./js/updateEmployee");
 
@@ -36,7 +36,6 @@ function start() {
         // TODO: figure out how to make this work
         addEmployee();
         // addEmployee;
-        // start();
       } else if (answer.startPrompt === "VIEW") {
         viewAll();
       } else if (answer.startPrompt === "UPDATE") {

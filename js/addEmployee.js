@@ -1,9 +1,8 @@
 const mysql = require("mysql");
 const inquirer = require("inquirer");
-const addEmployee = addEmp();
 
 // Function to add new employee
-function addEmp() {
+function addEmployee() {
   inquirer
     .prompt([
       // Questions for employees table
@@ -67,7 +66,7 @@ function addEmp() {
         };
       // re-prompt the user for if they want to add/view/update employee
       console.log("Employee has been added!");
-      //   start();
+      start();
     });
 }
 
